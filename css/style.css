@@ -1,0 +1,1694 @@
+/* ==== RESET GENERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ==== HEADER ==== */
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* ==== VIDEO BANNER ==== */
+.banner-video {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.banner-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.banner-video video::-webkit-media-controls {
+  display: none !important;
+}
+
+.overlay-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+/* ==== SECCIÓN SERVICIOS ==== */
+.servicios {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ==== PARALLAX SERVICIOS ==== */
+.parallax-servicio {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Texto sobre la imagen */
+.overlay-texto-servicio {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+/* Imágenes para secciones */
+#serv-disenio {
+  background-image: url('../img/diseno-grafico.jpg');
+}
+
+#serv-marketing {
+  background-image: url('../img/marketing.jpg');
+}
+
+
+#serv-audiovisual {
+  background-image: url('../img/visual.jpg');
+}
+
+.parallax-servicio {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* 🔽 Aquí agregamos la separación */
+  margin-bottom: 3rem;
+}
+
+
+
+/* ==== QUIÉNES SOMOS ==== */
+.quienes-somos {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.contenido-somos {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contenido-somos img {
+  max-width: 100px;
+  margin-top: 1rem;
+}
+
+/* ==== CONTACTO ==== */
+.contacto {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario-contacto button {
+  padding: 0.8rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ==== FOOTER ==== */
+/* ==== FOOTER ==== */
+footer {
+  background: #222;
+  color: #ccc;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-logo img {
+  width: 80px;
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
+
+.footer-info a {
+  font-weight: 500;
+  color: #aaa;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #fff;
+}
+
+.footer-redes img {
+  width: 32px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-redes img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Responsive footer text smaller on small screens */
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Estilos para el video de fondo en banner-video */
+.banner-video {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* ajusta la altura si quieres más grande o más pequeño */
+  overflow: hidden;
+}
+
+.banner-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  padding: 0 1rem;
+}
+.overlay-texto-servicio {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none; /* Quitar subrayado */
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-texto-servicio:hover {
+  background-color: rgba(255, 102, 0, 0.8); /* Efecto hover */
+  color: white;
+  text-decoration: none; /* También sin subrayado al pasar el mouse */
+}
+
+
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .banner-video {
+    height: 50vh;
+  }
+
+  .overlay-texto {
+    font-size: 1.6rem;
+  }
+
+  .overlay-texto-servicio {
+    font-size: 2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parallax-servicio {
+    background-attachment: scroll;
+    height: 50vh;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* ===== Estilos específicos para la página Diseño Gráfico ===== */
+.pagina-diseno main {
+  max-width: 700px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pagina-diseno .intro-disenio {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pagina-diseno .intro-disenio h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pagina-diseno .intro-disenio p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Carrusel */
+.pagina-diseno .carousel {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  background: #fff;
+  position: relative;
+}
+
+.pagina-diseno .carousel-track {
+  display: flex;
+  width: 300%; /* 3 slides */
+  transition: transform 0.5s ease-in-out;
+}
+
+.pagina-diseno .carousel-slide {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.pagina-diseno .carousel-slide img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 6px;
+  user-select: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Botones del carrusel */
+.pagina-diseno .carousel-buttons {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.pagina-diseno .carousel-button {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagina-diseno .carousel-button.active {
+  background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pagina-diseno main {
+    max-width: 95%;
+  }
+
+  .pagina-diseno .carousel-slide img {
+    max-height: 220px;
+  }
+
+  .pagina-diseno .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagina-diseno .carousel-slide img {
+    max-height: 160px;
+  }
+
+  .pagina-diseno .carousel-button {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+  }
+}
+
+/* ==== Reglas para hacer funcionar el carrusel ==== */
+.pagina-diseno input[type="radio"] {
+  display: none;
+}
+
+.pagina-diseno #slide1:checked ~ .carousel-track {
+  transform: translateX(0%);
+}
+
+.pagina-diseno #slide2:checked ~ .carousel-track {
+  transform: translateX(-100%);
+}
+
+.pagina-diseno #slide3:checked ~ .carousel-track {
+  transform: translateX(-200%);
+}
+
+.pagina-diseno #slide1:checked ~ .carousel-buttons label[for="slide1"],
+.pagina-diseno #slide2:checked ~ .carousel-buttons label[for="slide2"],
+.pagina-diseno #slide3:checked ~ .carousel-buttons label[for="slide3"] {
+  background-color: #333;
+}
+
+/* Estilos para la página Diseño Gráfico */
+.pagina-diseno main {
+  max-width: 700px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pagina-diseno .intro-disenio {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pagina-diseno .intro-disenio h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pagina-diseno .intro-disenio p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Galería Diseño Gráfico */
+.galeria-disenio {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.galeria-disenio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.imagenes-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.imagenes-galeria img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.imagenes-galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pagina-diseno main {
+    max-width: 95%;
+  }
+
+  .imagenes-galeria img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagenes-galeria {
+    gap: 10px;
+  }
+
+  .imagenes-galeria img {
+    max-width: 120px;
+  }
+}
+
+
+/* ==== ESTILOS PARA PÁGINA MARKETING DIGITAL ==== */
+
+/* ==== Página Marketing Digital ==== */
+.pagina-marketing main {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.pagina-marketing .intro-marketing {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pagina-marketing .intro-marketing h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pagina-marketing .intro-marketing p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ==== Carruselm ==== */
+.pagina-marketing .carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.pagina-marketing .carousel input[type="radio"] {
+  display: none;
+}
+
+.pagina-marketing .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 300%;
+}
+
+.pagina-marketing .carousel-slide {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 800px;
+  overflow: hidden;
+}
+
+.pagina-marketing .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+/* Botones del carrusel */
+.pagina-marketing .carousel-buttons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.pagina-marketing .carousel-button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagina-marketing input#mkt-slide1:checked ~ .carousel-track {
+  transform: translateX(0%);
+}
+.pagina-marketing input#mkt-slide2:checked ~ .carousel-track {
+  transform: translateX(-100%);
+}
+.pagina-marketing input#mkt-slide3:checked ~ .carousel-track {
+  transform: translateX(-200%);
+}
+
+.pagina-marketing input#mkt-slide1:checked ~ .carousel-buttons label[for="mkt-slide1"],
+.pagina-marketing input#mkt-slide2:checked ~ .carousel-buttons label[for="mkt-slide2"],
+.pagina-marketing input#mkt-slide3:checked ~ .carousel-buttons label[for="mkt-slide3"] {
+  background-color: #333;
+}
+
+/* ==== Servicios de Marketing ==== */
+.pagina-marketing .servicios-marketing {
+  margin: 2rem 0;
+}
+
+.pagina-marketing .servicios-marketing h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pagina-marketing .servicios-marketing ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+.pagina-marketing .servicios-marketing li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ==== Directora ==== */
+.pagina-marketing .directora {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.pagina-marketing .directora h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.pagina-marketing .directora-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.pagina-marketing .directora-foto {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.pagina-marketing .directora-img {
+  width: 190px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+}
+
+.pagina-marketing .directora-info {
+  max-width: 500px;
+}
+
+.pagina-marketing .directora-info h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.pagina-marketing .directora-info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.pagina-marketing .directora-info blockquote {
+  font-style: italic;
+  color: #666;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+}
+
+/* ==== Responsive ajustes ==== */
+@media (max-width: 768px) {
+  .pagina-marketing .carousel-slide {
+    height: 200px;
+  }
+
+  .pagina-marketing .directora-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pagina-marketing .directora-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagina-marketing .carousel-slide {
+    height: 150px;
+  }
+
+  .pagina-marketing .carousel-button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* === MENÚ HAMBURGUESA RESPONSIVE SIN JS === */
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav-list {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 12px;
+  }
+}
+
+
+
+
+/* ==== ESTILOS PARA PÁGINA PRODUCCIÓN AUDIOVISUAL ==== */
+/* Fondo general */
+body.pagina-audiovisual {
+  background: url('../img/fondo-general.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.container-header {
+  
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.logo h1 {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+
+
+/* BANNER VIDEO PRINCIPAL */
+.banner-video {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  perspective: 1px;
+  background: #000;
+}
+
+.banner-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.7);
+  will-change: transform;
+}
+
+.overlay-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.overlay-texto h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* SECCIÓN INTRO */
+.intro-audiovisual {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.intro-audiovisual h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.intro-audiovisual p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* GALERÍA DE VIDEOS */
+.galeria-videos {
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+.galeria-videos h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.video-item {
+  background: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
+  overflow: hidden;
+  width: 350px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #141112;
+}
+
+.video-item video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: transform 0.5s ease;
+  will-change: transform;
+  border-bottom: 3px solid#8f6a74;
+  border-radius}
+
+
+/*Galeria pagina principal*/
+/* ==== Banner de página ==== */
+.banner-pagina {
+  background: url("../img/banner-galeria.jpg") no-repeat center center / cover;
+  height: 180px;
+  position: relative;
+}
+
+.banner-pagina .overlay-texto {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-pagina .overlay-texto h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+/* ==== Sección Galería ==== */
+.galeria {
+  padding: 2rem 1rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Grid de imágenes */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Tarjeta individual */
+.galeria-grid-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.galeria-grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.galeria-grid-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.galeria-grid-item p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* ==== Menú hamburguesa ==== */
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+}
+
+.nav-list li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+
+/* Responsive menú hamburguesa */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav-list {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 12px;
+  }
+}
+
+
+/* Estilo base del enlace de navegación */
+.nav-list li a {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto de subrayado animado */
+.nav-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+/* Hover: cambia color y muestra subrayado */
+.nav-list li a:hover {
+  color: #000;
+}
+
+.nav-list li a:hover::after {
+  width: 100%;
+}
+
+
+
+
+/* Estilo tarifas */
+/* --- Estilos para las tarifas con hover "Comparar ahora" --- */
+
+.tarifas-servicios {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.tarifas-servicios h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.tarifas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.tarifa-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem 1.8rem 3rem 1.8rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tarifa-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tarifa-item h3 {
+  margin-bottom: 0.5rem;
+  color: #01080e;
+  font-size: 1.5rem;
+}
+
+.tarifa-item p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.tarifa-item ul {
+  list-style: disc inside;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.tarifa-item::after {
+  content: "Comparar ahora";
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0078D7;
+  color: white;
+  padding: 0.5rem 1.3rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.tarifa-item:hover::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- Menú hamburguesa sin JS --- */
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  user-select: none;
+  color: #0078D7;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 65px;
+    right: 0;
+    background-color: #fff;
+    width: 220px;
+    height: calc(100% - 65px);
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    padding-top: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-list li {
+    margin: 1.2rem 0;
+    text-align: center;
+  }
+
+  .nav-list a {
+    font-size: 1.2rem;
+    color: #0078D7;
+    text-decoration: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-list {
+    transform: translateX(0);
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .nav-list {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-list li {
+    list-style: none;
+  }
+
+  .nav-list a {
+    color: #0078D7;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+<!-- ==== Estilo para animar links del navbar ==== -->
+  <style>
+    .navbar-nav .nav-link {
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      font-size: 1.2rem;
+    }
+/* Fondo y texto general */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+body.light-mode .navbar {
+  background-color: #f8f9fa !important; /* color claro */
+  color: #000000;
+}
+
+body.dark-mode .navbar {
+  background-color: #343a40 !important; /* color oscuro */
+  color: #ffffff;
+}
+
+/* Links del navbar para que sean visibles */
+body.light-mode .navbar .nav-link {
+  color: #000000 !important;
+}
+
+body.dark-mode .navbar .nav-link {
+  color: #ffffff !important;
+}
+
+/* Sección de contacto */
+body.light-mode .contacto {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+body.dark-mode .contacto {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* Footer */
+body.light-mode footer {
+  background-color: #f8f9fa;
+  color: #000000;
+}
+
+body.dark-mode footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Asegurar que enlaces dentro de footer y contacto se vean */
+body.light-mode .contacto a,
+body.light-mode footer a {
+  color: #0000ee;
+}
+
+body.dark-mode .contacto a,
+body.dark-mode footer a {
+  color: #66aaff;
+}
+
+/* Opcional: Hover para enlaces en modo oscuro */
+body.dark-mode .contacto a:hover,
+body.dark-mode footer a:hover {
+  color: #99ccff;
+}
+/* Estilos generales para modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .footer-container {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode .footer-info a {
+  color: #f1f1f1;
+}
+
+.dark-mode .directora {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode .directora blockquote {
+  color: #cccccc;
+}
+/* Título de introducción en modo oscuro */
+.dark-mode .intro-marketing h2 {
+  color: #f1f1f1;
+}
+
+.dark-mode .intro-marketing p {
+  color: #d1d1d1;
+}
+/* === MODO OSCURO: Sección Intro de Marketing === */
+.dark-mode .intro-marketing {
+  background-color: #121212; /* fondo oscuro */
+  color: #f1f1f1; /* texto claro por defecto */
+}
+
+.dark-mode .intro-marketing h2 {
+  color: #ffffff; /* blanco puro para el título */
+}
+
+.dark-mode .intro-marketing p {
+  color: #dddddd; /* gris claro para mejor lectura */
+}
+.quienes-somos {
+  background-color: #fff; /* modo claro */
+  color: #333;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.modo-oscuro .quienes-somos {
+  background-color: #1c1c1c; /* fondo oscuro en modo oscuro */
+  color: #f0f0f0;
+}
+/* ==== RESET GENERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ==== ENCABEZADO / HEADER ==== */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 0;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  color: #111;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* ==== BANNER VIDEO ==== */
+.banner-video {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.banner-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.overlay-texto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* ==== SECCIÓN SERVICIOS ==== */
+.servicios {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ==== PARALLAX SERVICIOS ==== */
+.parallax-servicio {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Texto sobre la imagen */
+.overlay-texto-servicio {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-texto-servicio:hover {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
+/* Imágenes para secciones */
+#serv-disenio {
+  background-image: url('../img/diseno-grafico.jpg');
+}
+
+#serv-marketing {
+  background-image: url('../img/marketing.jpg');
+}
+
+#serv-audiovisual {
+  background-image: url('../img/visual.jpg');
+}
+
+/* ==== QUIÉNES SOMOS ==== */
+.quienes-somos {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.quienes-somos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contenido-somos {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contenido-somos p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contenido-somos img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+/* ==== FORMULARIO DE CONTACTO ==== */
+form .form-label {
+  font-weight: 600;
+}
+
+form textarea,
+form input,
+form select {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #111;
+  color: #eee;
+}
+
+footer a {
+  color: #eee;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}
+
+footer img {
+  filter: brightness(0) invert(1);
+}
+
+footer .small {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .overlay-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .overlay-texto-servicio {
+    font-size: 1.5rem;
+    padding: 15px 25px;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .container-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    text-align: left;
+  }
+
+  .contenido-somos {
+    text-align: center;
+  }
+}

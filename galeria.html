@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ==== Metadatos principales ==== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Kreativa Studio</title>
+
+  <!-- ==== Favicon ==== -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+  <!-- ==== Bootstrap CSS ==== -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- ==== Estilos personalizados ==== -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- ==== HEADER ==== -->
+  <header>
+    <div class="container-header">
+      <div class="logo d-flex align-items-center">
+        <img src="img/logo.png" alt="Logo Kreativa Studio">
+        <h1 class="ms-2">Kreativa Studio</h1>
+      </div>
+
+      <!-- ==== Menú de navegación Bootstrap ==== -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo Kreativa Studio" width="30" height="30" class="d-inline-block align-text-top">
+            Kreativa Studio
+          </a>
+
+          <!-- Dropdown modo oscuro -->
+          <div class="dropdown me-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="modeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              🌙 Modo
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="modeDropdown">
+              <li><a class="dropdown-item" href="#" data-mode="light">☀️ Claro</a></li>
+              <li><a class="dropdown-item" href="#" data-mode="dark">🌙 Oscuro</a></li>
+              <li><a class="dropdown-item" href="#" data-mode="auto">🌓 Automático</a></li>
+            </ul>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link active" href="galeria.html">Galería</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto.html">Servicios y Tarifas</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==== BANNER DE PÁGINA ==== -->
+  <section class="banner-pagina text-center text-white py-5" style="background: #333;">
+    <div class="overlay-texto">
+      <h2>Galería de Proyectos</h2>
+    </div>
+  </section>
+
+  <!-- ==== SECCIÓN DE GALERÍA CON BOOTSTRAP CARDS ==== -->
+  <section class="galeria container my-5">
+    <h2 class="text-center mb-4">Nuestros Trabajos</h2>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <p class="card-text">Identidad visual impactante para marca emergente.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+          <div class="card-body">
+            <p class="card-text">Campaña digital que conecta emociones y valores.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+          <div class="card-body">
+            <p class="card-text">Rediseño creativo para una experiencia de usuario superior.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/proyecto4.jpg" class="card-img-top" alt="Proyecto 4">
+          <div class="card-body">
+            <p class="card-text">Contenido visual que inspira y transforma.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/proyecto5.jpg" class="card-img-top" alt="Proyecto 5">
+          <div class="card-body">
+            <p class="card-text">Estrategia audiovisual con enfoque innovador.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/proyecto6.jpg" class="card-img-top" alt="Proyecto 6">
+          <div class="card-body">
+            <p class="card-text">Diseño gráfico que impulsa la presencia digital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER ==== -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Logo -->
+      <div class="col-md-3 text-center mb-3 mb-md-0">
+        <img src="img/logo.png" alt="Logo Footer" class="img-fluid mb-2" style="max-height:60px;">
+      </div>
+
+      <!-- Info -->
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-1"><strong>Teléfonos:</strong> 506 4080 9797 ext.1301 | 8716-1736</p>
+        <p class="mb-1"><strong>Web:</strong> 
+          <a href="https://www.kreativastudio.com" target="_blank" class="text-white text-decoration-none">
+            www.kreativastudio.com
+          </a>
+        </p>
+        <p class="mb-1"><strong>Email:</strong> 
+          <a href="mailto:kreativastudio.com" class="text-white text-decoration-none">
+            kreativastudio.com
+          </a>
+        </p>
+        <p class="mb-1"><strong>Dirección:</strong> 
+          <a href="https://goo.gl/maps/Xxxxxx" target="_blank" class="text-white text-decoration-none">
+            Ver en Google Maps
+          </a>
+        </p>
+        <p class="small">
+          <a href="#" class="text-white-50 text-decoration-none">Términos de privacidad</a>
+        </p>
+      </div>
+
+      <!-- Redes con íconos Font Awesome -->
+      <div class="col-md-3 text-center">
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-facebook fa-lg" style="color: #3b5998;"></i>
+        </a>
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-instagram fa-lg" style="color: #e4405f;"></i>
+        </a>
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-youtube fa-lg" style="color: #ff0000;"></i>
+        </a>
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-tiktok fa-lg" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-light my-4">
+
+    <!-- Copy -->
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0 small text-white-50">© 2025 Kreativa Studio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- ==== SCRIPTS ==== -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/modo-os

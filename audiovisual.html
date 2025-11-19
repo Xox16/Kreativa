@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Producción Audiovisual Profesional - Kreativa Studio" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <title>Producción Audiovisual - Kreativa Studio</title>
+
+  <!-- ==== Favicon ==== -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+
+  <!-- ==== Estilos CSS ==== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body class="pagina-audiovisual">
+
+  <!-- ==== HEADER ==== -->
+  <!-- ==== HEADER ==== -->
+  <header>
+    <div class="container-header">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo Kreativa Studio" />
+        <h1>Kreativa Studio</h1>
+      </div>
+
+       <!-- ==== Menú de navegación Bootstrap ==== -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo Kreativa Studio" width="30" height="30" class="d-inline-block align-text-top">
+            Kreativa Studio
+          </a>
+            <!-- Aquí va el dropdown para modo oscuro -->
+    <div class="dropdown me-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="modeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        🌙 Modo
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="modeDropdown">
+        <li><a class="dropdown-item" href="#" data-mode="light">☀️ Claro</a></li>
+        <li><a class="dropdown-item" href="#" data-mode="dark">🌙 Oscuro</a></li>
+        <li><a class="dropdown-item" href="#" data-mode="auto">🌓 Automático</a></li>
+      </ul>
+    </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Servicios y Tarifas</a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ==== BANNER VIDEO PRINCIPAL (Parallax) ==== -->
+  <section class="banner-video">
+    <video autoplay muted loop playsinline>
+      <source src="img/fondo1.mp4" type="video/mp4" />
+      Tu navegador no soporta el video HTML5.
+    </video>
+    <div class="overlay-texto">
+      <h2>Producción Audiovisual que impacta</h2>
+    </div>
+  </section>
+
+  <!-- ==== SECCIÓN DE INTRODUCCIÓN ==== -->
+  <section class="intro-audiovisual">
+    <h2>Contamos historias visuales que conectan</h2>
+    <p>
+      Creamos contenido profesional que eleva tu marca. Desde spots publicitarios, videos corporativos y contenido social que atrapa.
+    </p>
+  </section>
+
+  <!-- ==== GALERÍA DE VIDEOS (videos autoplay, muted, loop, parallax efecto) ==== -->
+  <section class="galeria-videos">
+    <h3>Proyectos Destacados</h3>
+    <div class="videos-container">
+      <div class="video-item parallax-video">
+        <video autoplay muted loop playsinline>
+          <source src="img/fondo0.mp4" type="video/mp4" />
+          Tu navegador no soporta el video.
+        </video>
+        <p>“Transformando ideas en imágenes que inspiran”</p>
+      </div>
+
+      <div class="video-item parallax-video">
+        <video autoplay muted loop playsinline>
+          <source src="img/fondo2.mp4" type="video/mp4" />
+          Tu navegador no soporta el video.
+        </video>
+        <p>“Creatividad en movimiento para contar tu historia”</p>
+      </div>
+
+      <div class="video-item parallax-video">
+        <video autoplay muted loop playsinline>
+          <source src="img/fondo3.mp4" type="video/mp4" />
+          Tu navegador no soporta el video.
+        </video>
+        <p>“Cada frame es una oportunidad para impactar”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER ==== -->
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Logo -->
+      <div class="col-md-3 text-center mb-3 mb-md-0">
+        <img src="img/logo.png" alt="Logo Footer" class="img-fluid mb-2" style="max-height:60px;">
+      </div>
+
+      <!-- Info -->
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-1"><strong>Teléfonos:</strong> 506 4080 9797 ext.1301 | 8716-1736</p>
+        <p class="mb-1"><strong>Web:</strong> 
+          <a href="https://www.kreativastudio.com" target="_blank" class="text-white text-decoration-none">
+            www.kreativastudio.com
+          </a>
+        </p>
+        <p class="mb-1"><strong>Email:</strong> 
+          <a href="mailto:kreativastudio.com" class="text-white text-decoration-none">
+            kreativastudio.com
+          </a>
+        </p>
+        <p class="mb-1"><strong>Dirección:</strong> 
+          <a href="https://goo.gl/maps/Xxxxxx" target="_blank" class="text-white text-decoration-none">
+            Ver en Google Maps
+          </a>
+        </p>
+        <p class="small">
+          <a href="#" class="text-white-50 text-decoration-none">Términos de privacidad</a>
+        </p>
+      </div>
+
+      <!-- Redes con íconos Font Awesome -->
+      <div class="col-md-3 text-center">
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-facebook fa-lg" style="color: #3b5998;"></i>
+        </a>
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-instagram fa-lg" style="color: #e4405f;"></i>
+        </a>
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-youtube fa-lg" style="color: #ff0000;"></i>
+        </a>
+        <a href="#" class="text-decoration-none me-3">
+          <i class="fab fa-tiktok fa-lg" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-light my-4">
+
+    <!-- Copy -->
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0 small text-white-50">© 2025 Kreativa Studio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- ==== SCRIPT MENÚ HAMBURGUESA ==== -->
+  <script src="js/menu.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/modo-oscuro.js"></script>
+
+
+
+</body>
+</html>
